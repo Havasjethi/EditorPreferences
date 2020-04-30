@@ -1,32 +1,82 @@
 // keybindings.json
 [
     {
+        "key": "alt+left",
+        "command": "workbench.action.previousEditor",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+right",
+        "command": "workbench.action.nextEditor",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.terminal.focus",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.togglePanel",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.togglePanel",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.togglePanel",
+        "when": "terminalFocus"
+    },
+    {
         "key": "shift+alt+up",
         "command": "editor.action.moveLinesUpAction",
         "when": "editorTextFocus"
-    },{
+    },
+    {
         "key": "shift+alt+down",
         "command": "editor.action.moveLinesDownAction",
         "when": "editorTextFocus"
+    },    
+    {
+        "key": "alt+down",
+        "command":"editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+up",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+right",
+        "command": "editor.action.insertCursorAtEndOfEachLineSelected",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+numpad_divide",
+        "command": "editor.action.addCommentLine",
+        "when": ""
     },{
-        "key": "ctrl+l",
-        "command": "workbench.action.terminal.focus",
-        "when": "!terminalFocus"
-    },{
-        "key": "ctrl+k",
-        "command": "workbench.action.terminal.focus",
-        "when": "!terminalFocus"
-    },{
-        "key": "ctrl+l",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "terminalFocus"
-    },{
-        "key": "ctrl+k",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "terminalFocus"
-    },{
-        "key": "ctrl+d",
-        "command": "editor.action.duplicateSelection",
+        "key": "ctrl+numpad_multiply",
+        "command": "editor.action.removeCommentLine",
         "when": "editorTextFocus"
     }
 ]
